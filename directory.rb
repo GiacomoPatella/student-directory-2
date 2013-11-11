@@ -7,3 +7,7 @@ puts "Hannah"
 puts "Ken"
 puts "Asta"
 puts "G"
+
+print "Overall we have "
+print 7
+print " great students"
