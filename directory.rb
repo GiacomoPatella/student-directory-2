@@ -1,35 +1,33 @@
-student_count = 9
-
 students = [
-  "Chris",
-  "Anath",
-  "Simon",
-  "Hannah",
-  "Ken",
-  "Asta",
-  "G"
+  {:name => "Chris", :cohort => :november},
+  {:name => "Anath", :cohort => :november},
+  {:name => "Simon", :cohort => :november},
+  {:name => "Hannah", :cohort => :november},
+  {:name => "Ken", :cohort => :november},
+  {:name => "Asta", :cohort => :november},
+  {:name => "G", :cohort => :november}
 ]
+
 
 def print_header
 	puts "Lovely folks of my cohort at Makers Academy:"
 	puts "-----------"
 end
 
-def print(names)
-	names.each do |name|
-		puts name
+def print(students)
+	students.each do |student|
+		puts "#{student[:name]} (#{student[:cohort]} cohort)"
 	end
 end
 
-def print_footer(names)
-	puts "Overall we have #{names.length} students!"
+def print_footer(students)
+	puts "Overall we have #{students.length} students!"
 end
 
 
-puts print_header
-puts print(students)
-puts print_footer(students)
-
+print_header
+print(students)
+print_footer(students)
 
 
 
