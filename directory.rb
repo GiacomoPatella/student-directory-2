@@ -10,14 +10,27 @@ students = [
   "G"
 ]
 
-#We print a list of students
-puts "Lovely folks of my cohort at Makers Academy:"
-
-puts "-----------"
-
-students.each do |student|
-	puts student
+def print_header
+	puts "Lovely folks of my cohort at Makers Academy:"
+	puts "-----------"
 end
 
-puts "Overall we have #{students.length} students!"
+def print(names)
+	names.each do |name|
+		puts name
+	end
+end
+
+def print_footer(names)
+	puts "Overall we have #{names.length} students!"
+end
+
+
+puts print_header
+puts print(students)
+puts print_footer(students)
+
+
+
+
 
