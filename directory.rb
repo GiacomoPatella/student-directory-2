@@ -3,6 +3,11 @@ def print_header
         puts "-----------"
 end
 
+
+# def type #you can create a method "type" so then you just call it and omit the puts
+#   "Type the names of the students:"
+# end
+
 def input_students
   puts "Type the names of the students:"
   puts "To finish just hit return twice!"
@@ -24,6 +29,7 @@ def print_footer(students)
         puts "Overall we have #{students.length} students!"
 end
 
+# type
 students = input_students
 print(students)
 print_footer(students)
