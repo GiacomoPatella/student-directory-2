@@ -27,7 +27,7 @@ def add
       weapon = gets.chomp.capitalize
       student[:weapon] = weapon
       @students << student
-      save_students(@students)
+      save_students(@students) #try with and
       puts "#{student_name} has been added to the database!"
     end
 end
